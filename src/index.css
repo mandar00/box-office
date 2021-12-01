@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+   margin:0;
+   padding:0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.body{
+   font-size:10px;
 }
+
+.ActorGrid{
+  margin: 2rem 2rem ;
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  row-gap: 2rem;
+  column-gap: 6rem;
+  grid-auto-flow: row;
+}
+
+.ActorCard{
+  /* position: relative; */
+  width: 21rem;
+  height: 23rem;
+  /* background-color: #EFEFEF; */
+  /* border: 2px solid black; */
+  border-radius: 2rem;
+  overflow: hidden;
+
+
+}
+.ActorGrid_img{
+  /* background-color: aquamarine; */
+  width: 17rem;
+  height: 17rem;
+  overflow: hidden;
+  display: flex; 
+  justify-content: center;
+  /* position: absolute; */
+  margin: auto;
+  border-radius: 50%;
+}
+
+.ShowGrid{
+  margin: 2rem 2rem ;
+  /* background-color: aquamarine; */
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  row-gap: 2rem;
+  column-gap: 6rem;
+  grid-auto-flow: row;
+}
+
+.ShowCard{
+  /* position: relative; */
+  width: 21rem;
+  height: 28rem;
+  /* background-color: #EFEFEF; */
+  /* border: 2px solid black; */
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 11px 11px 73px -12px rgba(0,0,0,0.84);
+-webkit-box-shadow: 11px 11px 73px -12px rgba(0,0,0,0.84);
+-moz-box-shadow: 11px 11px 73px -12px rgba(0,0,0,0.84);
+
+
+}
+
+.ShowCard_img> img{
+  width: 21rem;
+  height: 19rem;
+}
+
+.link_n_btn> a{
+  text-decoration: none;
+  color: black;
+}
+  
+  
