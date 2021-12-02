@@ -9,13 +9,13 @@ const Nav = () => {
 
   return (
     <>
-      <ul>
+    <div className="navMainDiv">
         {links.map((items) => (
-          <li key={items.to}>
-            <NavLink to={items.to}>{items.text}</NavLink>
-          </li>
+            <div className={`nav${items.text}`}>
+            <NavLink activeClassName="nav" to={items.to}>{items.text}</NavLink>
+            </div>
         ))}
-      </ul>
+    </div>
     </>
   );
 };

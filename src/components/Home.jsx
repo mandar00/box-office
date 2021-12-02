@@ -46,25 +46,34 @@ const onRadioChange=(ev)=>{
   return (
     <>
       <MainPage>
+
+
+      <div className="searchAreaDiv">
         <input
+        className="mainSearchBar"
           type="text"
           placeholder="Search"
           onChange={onInputChange}
           onKeyDown={onKeyDown}
           value={input}
         />
-        <button type="button" onClick={Search}>
+        <button className="mainSearchButton" type="button" onClick={Search}>
           Search
         </button><br/>
-        <label htmlFor="shows-search">
-          <input id="shows-search" type="radio" name="search-select" value="shows"  onChange={onRadioChange} defaultChecked="true"></input>
+        </div>
+
+
+        <div className="mainSelectDiv">
+        <label className="shows-search" htmlFor="shows-search">
+          <input className="showSelect" id="shows-search" type="radio" name="search-select" value="shows"  onChange={onRadioChange} defaultChecked="true"></input>
           Shows
         </label>
 
-        <label htmlFor="actor-search">
-          <input id="actor-search" type="radio" name="search-select" value="people" onChange={onRadioChange}></input>
+        <label className="actor-search" htmlFor="actor-search">
+          <input className="actorSelect" id="actor-search" type="radio" name="search-select" value="people" onChange={onRadioChange}></input>
           Actors
         </label>
+        </div>
         
         {renderResults()}
       </MainPage>
