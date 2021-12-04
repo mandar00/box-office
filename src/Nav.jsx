@@ -11,8 +11,8 @@ const Nav = () => {
     <>
     <div className="navMainDiv">
         {links.map((items) => (
-            <div className={`nav${items.text}`}>
-            <NavLink activeClassName="nav" to={items.to}>{items.text}</NavLink>
+            <div key={items.text} className={`nav${items.text}`}>
+            <NavLink activeclassname="nav" to={items.to}>{items.text}</NavLink>
             </div>
         ))}
     </div>
